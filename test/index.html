@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TEST Mocha-tdd angular</title>
+  <script src="bower_components/angular/angular.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="bower_components/mocha/mocha.css">
+  </head>
+  <body ng-app="AdressBook">
+    <div id="mocha"></div>
+    <script src="bower_components/mocha/mocha.js" charset="utf-8"></script>
+    <script src="bower_components/chai/chai.js" charset="utf-8"></script>
+    <script>
+      mocha.setup('bdd');
+    </script>
+
+    <script src="main.spec.js" charset="utf-8"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>

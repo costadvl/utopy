@@ -1,0 +1,36 @@
+{
+  "name": "angulartdd",
+  "version": "1.0.0",
+  "description": "angular tdd enviroment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/costadvl/utopy.git"
+  },
+  "keywords": [
+    "angular",
+    "tdd",
+    "karma",
+    "js."
+  ],
+  "author": "Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/costadvl/utopy/issues"
+  },
+  "homepage": "https://github.com/costadvl/utopy#readme",
+  "dependencies": {
+    "browser-sync": "2.13.0",
+    "gulp": "3.9.1",
+    "karma": "1.1.2",
+    "karma-mocha": "1.1.1",
+    "mocha": "3.0.0"
+  },
+  "devDependencies": {
+    "karma-phantomjs-launcher": "1.0.1",
+    "mocha": "3.0.0"
+  }
+}
