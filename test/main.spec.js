@@ -39,7 +39,7 @@ describe('adress book app', function () {
       $controller('contactController', {$scope: $scope, contactService: contactService})
       assert.isArray($scope.contacts);
     })
-  })
+  });
 
   describe('the proper filter', function () {
     var proper;
@@ -62,6 +62,23 @@ describe('adress book app', function () {
       assert.throws(function () {
         proper(undefined)
       })
+    })
+  });
+
+  describe('Avatar', function () {
+
+    beforeEach(function () {
+      module('AddressBook')
+    })
+
+    it('should display the capitalized first letter of a name', function () {
+      inject(function ($rootScope, $compile) {
+        $rootScope.contact = {name: 'john arryn'};
+        var element = $compile('<avatar name=contact.name>')($rootScope);
+        $rootScope.$digest();
+        var dirText = element.text();
+        expect(dirText).to.equal('J');
+      });
     })
   })
 })
