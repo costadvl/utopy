@@ -24,6 +24,7 @@
   "homepage": "https://github.com/costadvl/utopy#readme",
   "dependencies": {
     "browser-sync": "2.13.0",
+    "cors": "^2.7.1",
     "express": "^4.14.0",
     "gulp": "3.9.1",
     "gulp-live-server": "0.0.30",
